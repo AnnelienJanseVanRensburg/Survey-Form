@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Feedback Survey | Alzo Hotel</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title">
+                    Alzo Hotel Survey
+                </h1>
+                <p id="description">
+                    Thank you for taking the time to help us improve our services
+                </p>
+            </header>
+            <form action="" id="survey-form">
+                <!-- Text section -->
+                 <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                 </div>
+                <!-- End of text section -->
 
+                <!--Email section-->
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                 </div>
+                <!--End email section-->
+                
+                <!--Number section-->
+                <div class="form-group">
+                    <label for="number" id="number-label">Room Number</label>
+                    <input type="number" name="number" id="number" class="form-control" placeholder="Enter your room number" required max="100" min="1">
+                 </div>
+                <!--End number section-->
+
+                <!--Select section-->
+                <div class="form-group">
+                    <p id="question">What type of room did you stay in?</p>
+                    <select id="dropdown" name="room" class="form-control" required>
+                        <option disabled selected value="">Select your room option</option>
+                        <option value="standard">Standard Room</option>
+                        <option value="executive">Executive Room</option>
+                        <option value="superior">Superior Room</option>
+                        <option value="family">Family Room</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+                <!--End select section-->
+
+                <!--Radio section-->
+                <div class="form-group">
+                    <p id="question">Would you recommend our hotel to a friend?</p>
+                    <label for="">
+                        <input type="radio" name="radio-recommend" value="yes" checked class="radioIn"/> Yes
+                    </label>
+                    <label for="">
+                        <input type="radio" name="radio-recommend" value="maybe" class="radioIn"/> Maybe
+                    </label>
+                    <label for="">
+                        <input type="radio" name="radio-recommend" value="no" class="radioIn"/> No
+                    </label>
+                </div>
+                <!--End radio section-->
+
+                <!--Checkbox section-->
+                <div class="form-group">
+                    <p id="question">Which of these apply to your stay?</p>
+                    <label for="">
+                        <input type="checkbox" name="applies" value="polite" class="checkbox"/> Polite staff members
+                    </label>
+                    
+                    <label for="">
+                        <input type="checkbox" name="applies" value="check-in" class="checkbox"/> Quick check-in process
+                    </label>
+
+                    <label for="">
+                        <input type="checkbox" name="applies" value="clean" class="checkbox"/> Clean room upon arrival
+                    </label>
+
+                    <label for="">
+                        <input type="checkbox" name="applies" value="bed" class="checkbox"/> Comfortable bed linens
+                    </label>
+
+                    <label for="">
+                        <input type="checkbox" name="applies" value="breakfast" class="checkbox"/> Good quality breakfast
+                    </label>
+
+                    <label for="">
+                        <input type="checkbox" name="applies" value="food-aff" class="checkbox"/> Affordable meal options
+                    </label>
+
+                    <label for="">
+                        <input type="checkbox" name="applies" value="stay-aff" class="checkbox"/> Affordable stay
+                    </label>
+
+                    <label for="">
+                        <input type="checkbox" name="applies" value="response-time" class="checkbox"/> Quick response to requests
+                    </label>
+                </div>
+                <!--End checkbox section-->
+
+                <!--Textarea section-->
+                <div class="form-group">
+                    <p id="question">Do you have any other comments, questions, or concerns?</p>
+                    <textarea name="comments" id="comments" cols="30" rows="5" class="textarea"></textarea>
+                </div>
+                <!--End textarea section-->
+
+                <!--Submit button-->
+                <div class="form-group">
+                    <button type="submit" id="submit" class="button">Submit</button>
+                </div>
+                <!--End submit button-->
+            </form>
+        </div>
+    </body>
+</html>
